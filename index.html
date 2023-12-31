@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  autocomplete="on" onsubmit="event.preventDefault(); getsubdetails()">
+        <h1>Details -</h1> 
+        <p>Name: <input type="text" name="name" id="name" required></p>
+        <fieldset>
+            <legend>Gender</legend>
+            <p>
+                Male <input type="radio" name="gender" id="male">
+                Female <input type="radio" name="gender" id="female">
+            </p>
+        </fieldset>
+        <p>Email:<input type="email"></p>
+        <p>No.:<input type="number"></p>
+        <p>Progress: <progress value="30" min="0" max="100"></progress></p>
+        <p><meter value="40" min="0" max="100"></meter></p>
+        <p>Card: 
+            <select name="card" id="card">
+                <option value="">--select--</option>
+                <option value="ww">ww</option>
+                <option value="sss">sss</option>
+                <option value="rrr">rrr</option>
+            </select>
+        </p>
+        <p>Add: <textarea name="add" id="add" rows="3" cols="30"></textarea> </p>
+        <p>Add: <input type="submit"> </p>
+    </form>
+    <script>
+        function getsubdetails(){
+            // event.preventDefault()
+            console.log("form event")
+        }
+    </script>
+</body>
+</html>
